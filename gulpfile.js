@@ -109,9 +109,9 @@ const connect = require('gulp-connect')
 function watchTask() {
     
     watch('./src/**/*.*', function () {
-        //copy()
+        copy()
         sass()
-        //js()
+        js()
     })
 
     watch('./dist/**/*.*', function () {
