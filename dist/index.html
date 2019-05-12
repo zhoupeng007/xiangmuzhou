@@ -9,28 +9,63 @@
   <link rel="stylesheet" href="./css/index.css">
 </head>
 <body>
+<div class="all">
+  <!--头部开始 -->
   <div class="header">
     <!-- header 顶部最大的盒子 -->
-    <div class="hbox w">
+    <div class="hbox">
       <!-- header里面版心盒子 -->
       <div class="zbox">
         <!-- header版心盒子里面的大盒子 -->
         <div class="leftkj">
           <!-- 头部左边快捷栏 -->
           <ul class="kj">
-            <li>
-              <a href="./html/login.html">登陆注册</a>
+            <li class="lkjdl">
+              <a href="./html/login.html" class="a1">登陆/注册</a>
             </li>
-            <li>
-              <a href="./html/cart.html">购物车</a>
+            <li class="lkjcart">
+              <a href="./html/cart.html" class="a1">购物车<span style="color:red">0</span>件</a>
+              <div class="lkjcart1">购物车暂时没有商品</div>
+              <!--lkjcart1 是购物车拓展栏 -->
             </li>
-            <li>
-              <a href="javascript:;">我的走秀v</a>
+            <li class="lkjmyx">
+              <a href="./html/login.html" class="a1">我的走秀v</a>
+              <div class="lkjmyx_caidan">
+                <ul class="lkjmyx_caidan1">
+                  <li class="lkjmyx_caidan1_li"><a href="javascript:;">我的订单</a></li>
+                  <li class="lkjmyx_caidan1_li"><a href="javascript:;">自助退货</a></li>
+                  <li class="lkjmyx_caidan1_li"><a href="javascript:;">我的收藏</a></li>
+                  <li class="lkjmyx_caidan1_li"><a href="javascript:;">帮助中心</a></li>
+                  <li class="lkjmyx_caidan1_li"><a href="javascript:;">全部吐槽</a></li>
+                </ul>
+              </div>
             </li>
+          </ul>
+        </div>
+        <!-- 左侧快捷栏结束 -->
+        <!-- logo -->
+        <div class="logo_m"><a href="./index.html"></a></div>
+        <!-- 右侧的搜索框 -->
+        <div class="right_i">
+          <input type="text" class="right_i_input" placeholder="请搜索小鹏鹏最帅试试">
+          <div class="right_i_btn"></div>
+        </div>
+        <!-- 右侧的搜索框结束了 -->
+        <!-- 下边的headernav -->
+        <div class="headernav">
+          <ul class="headernar_u">
+            <li class="headernar_u_lisy"><a href="javascript:;">首页</a></li>
+            <li><a href="javascript:;">新品</a></li>
+            <li><a href="javascript:;">男士</a></li>
+            <li><a href="javascript:;">女士</a></li>
+            <li><a href="javascript:;">品牌</a></li>
+            <li><a href="javascript:;">手机走秀</a></li>
           </ul>
         </div>
       </div>
     </div>
   </div>
+  <!-- 头部结束 -->
+</div>
 </body>
 </html>
