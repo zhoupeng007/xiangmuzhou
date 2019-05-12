@@ -38,7 +38,7 @@ function copyImg() {
 
 gulp.task('copy-img', copyImg)
 
-let copy = gulp.parallel(copyHtml, copyImg, copyIndex)
+let copy = gulp.parallel(copyHtml,copyIndex)
 
 gulp.task('copy', copy)
 

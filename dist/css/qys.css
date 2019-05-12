@@ -1,0 +1,67 @@
+@charset "utf-8";
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a,
+br,
+hr,
+dl,
+ul,
+p,
+ol,
+img,
+input,
+dt,
+dd,
+li,
+figcaption,
+figure {
+  padding: 0;
+  margin: 0;
+}
+ul,ol{
+  list-style: none;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
+}
+a{
+  text-decoration: none;
+  color:#000;
+}
+a:hover{
+  color:#f60;
+}
+img {
+  display: block;
+}
+
+input {
+  outline: none;
+}
+
+body {
+  font-size: 12px;
+  font-family: "微软雅黑";
+  color: #000;
+}
+html,body{
+  height: 100%;
+}
+/*======================================以上是css定义===========================*/
