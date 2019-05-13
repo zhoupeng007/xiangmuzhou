@@ -54,9 +54,11 @@ gulp.task('copy', copy)
 //  1. 安装cnpm 【npm install -g cnpm --registry=https://registry.npm.taobao.org】
 //  2. 使用cnpm install来安装node包
 const gulpSass = require('gulp-sass')
+const plumber = require('gulp-plumber')
 function sass() {
     console.log('aaaaaaaaaaaaa')
     return gulp.src('./src/style/**/*.scss')
+        .pipe(plumber())
         .pipe(gulpSass({ outputStyle: 'compressed' }))//outputStyle: 'compact', 'compressed', 'expanded', 'nested'
         .pipe(gulp.dest('./dist/css'))
 }
