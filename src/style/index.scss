@@ -545,17 +545,54 @@ $BANXIN : 1200px;
             font-family: "微软雅黑",
             microsoft yahei,
             "宋体";
+            width: 100%;
+            padding-top: 20px;
+            min-width: 1200px;
+            clear: both;
             .cs{
               height: 125px;
               margin: 10px 100px 0 0;
               display: inline;
+              float: left;
               width: 183px;
+              overflow: hidden;
               .kl{
                 background: url(./../assets/imgs/foot.gif) no-repeat left -86px;
                 display: inline-block;
                 width: 183px;
                 height: 35px;
               }
+              .p_num{
+                background: url(./../assets/imgs/foot.gif) no-repeat left -122px;
+                width: 183px;
+                height: 45px;
+              }
+              .mk{
+                background: url(./../assets/imgs/foot.gif) no-repeat left -167px;
+                display: inline-block;
+                width: 183px;
+                height: 35px;
+              }
+            }
+            .newul{
+              padding: 8px 60px 0 0;
+              width: 200px;
+              float: left;
+              li{
+                font-size: 14px;
+                line-height: 26px;
+                color: #4c4c4c;
+                height: auto;
+                overflow: visible;
+                a{
+                  color: #4c4c4c;
+                }
+              }
+            }
+            .newus{
+              width: 254px;
+              padding: 0;
+              padding-top: 12px;
             }
           }
         }
