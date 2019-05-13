@@ -72,7 +72,7 @@ const uglify = require('gulp-uglify');
 function js() {
     return gulp.src('./src/script/**/*.js')
         .pipe(concat('output.js'))
-        .pipe(uglify())
+        //.pipe(uglify())
         .pipe(gulp.dest('./dist/js'))
 }
 gulp.task('js', js)

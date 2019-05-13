@@ -32,6 +32,7 @@ $BANXIN : 1200px;
             float: left;
             padding-left: 20px;
             position: relative;
+            z-index: 996;
             background: url(./../assets/imgs/spriter2016.png) no-repeat;
             background-position: -218px -42px;
             &:hover{
@@ -58,6 +59,8 @@ $BANXIN : 1200px;
           .lkjmyx{
             display: inline;
             float: left;
+            z-index: 996;
+            position: relative;
             &:hover{
               background: #fff;
               margin:-1px 0 0 -1px;
@@ -210,6 +213,7 @@ $BANXIN : 1200px;
         top: 100%;
         left: 0;
         border: 1px solid #ccc;
+        background: #fff;
         z-index: 5;
       };
       &:hover{
@@ -221,4 +225,68 @@ $BANXIN : 1200px;
   }
 }
 //nav 结束
-// banner 开始
+//home 开始
+.homebox{
+  min-width:$BANXIN;
+  width: 100%;
+  margin: 0 auto;
+  .home{
+    width:$BANXIN;
+    margin: 0 auto;
+    padding: 20px 0 30px;
+    .banner{
+      width: 1200px;
+      height: 610px;
+      margin: 0 auto;
+      padding: 0 0 20px;
+      position: relative;
+      overflow: hidden;
+      .lunbo{
+        width: $BANXIN;
+        position: relative;
+        .lunbo_ul{
+          position: absolute;
+          height: 610px;
+          transition: all .5s;
+        }
+      };
+      .lunbonum{
+        width: 1200px;
+        overflow: hidden;
+        height: 15px;
+        text-align: center;
+        z-index: 10;
+        position: absolute;
+        left: 0;
+        bottom: 40px;
+        .focus{
+          background: #222 !important;
+        }
+        .lunbonum_ul{
+          height: 15px;
+          position: absolute;
+          top: 0;
+          left: 50%;
+          zoom: 1;
+          margin: 0 0 0 -63px;
+          z-index: 2;
+          li {
+            z-index: 20;
+            float: left;
+            display: block;
+            width: 15px;
+            height: 15px;
+            line-height: 15px;
+            margin: 0 5px;
+            text-align: center;
+            background: #ccc;
+            color: #000;
+            border-radius: 50%;
+            cursor: pointer;
+            text-indent: 0em;
+          }
+        }
+      }
+    }
+  }
+}
