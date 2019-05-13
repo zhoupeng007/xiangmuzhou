@@ -48,10 +48,9 @@ a{
 a:hover{
   color:#f60;
 }
-img {
+img{
   display: block;
 }
-
 input {
   outline: none;
 }

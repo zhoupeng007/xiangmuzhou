@@ -10,7 +10,6 @@ function lunbo() {
 
         function movse(index) {
           var index = index
-          console.log(index)
           var $ul = $(".lunbo_ul")
           $ul.mouseover(function () {
             stop()
