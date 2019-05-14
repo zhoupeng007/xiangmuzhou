@@ -1,0 +1,116 @@
+*{
+  box-sizing: border-box;
+}
+@import "./_head";
+.autobody{
+  position: relative;
+  width: 1200px;
+  margin-left: auto;
+  margin-right: auto;
+  min-height: 400px;
+  .cont{
+    width: 300px;
+    margin: 125px auto 50px;
+    h2{
+      width:300px;
+      height: 30px;
+      font-size: 30px;
+      text-align: center;
+      line-height: 30px;
+      margin-bottom:20px;
+    };
+    .uesrname{
+      width: 300px;
+      height: 68px;
+      padding-top: 30px;
+      margin-top: 30px;
+      position: relative;
+      border-bottom: 1px solid #000;
+      .login_name{
+        width: 300px;
+        height: 42px;
+        border: 0px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 18px;
+        line-height: 42px;
+      }
+    }
+    .password{
+      width: 300px;
+      height: 68px;
+      padding-top: 30px;
+      margin-top: 30px;
+      position: relative;
+      border-bottom: 1px solid #000;
+      .login_password {
+        width: 300px;
+        height: 42px;
+        border: 0px;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        font-size: 18px;
+        line-height: 42px;
+      }
+    }
+    .zhaohui{
+      float:right;
+      display: flex;
+      .zhzh{
+        width: 70px;
+        height: 15px;
+        background: #ccc;
+        border: 1px solid #000;
+        margin-top: 10px;
+        line-height: 15px;
+        text-align: center;
+        a{
+          color:#000;
+        }
+      };
+      .zhuce{
+        width: 70px;
+        height: 15px;
+        background: #ccc;
+        border: 1px solid #000;
+        margin-top: 10px;
+        line-height: 15px;
+        text-align: center;
+        a {
+          color: #000;
+        }
+      }
+    }
+    .passerror{
+      width: 300px;
+      height: 20px;
+      font-size: 12px;
+      line-height: 20px;
+      text-align: center;
+      color: #f10;
+      display: none;
+    }
+    .login_btn{
+      position: absolute;
+      margin-top: 40px;
+      width: 300px;
+      height: 50px;
+      border: 0;
+      background-color: #bebebe;
+    }
+  }
+}
+#footer{
+    min-width: 1200px;
+    background-color: #111;
+    position: absolute;
+    z-index: 996;
+    text-align: center;
+    #img111{
+      vertical-align: middle;
+      display: inline;
+      width: 1519px
+    }
+}

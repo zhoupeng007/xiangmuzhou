@@ -68,16 +68,22 @@ gulp.task('sass', sass)
 //连接JS，gulp需要依赖插件(gulp-concat)
 //压缩，需要依赖插件(gulp-uglify)
 const concat = require('gulp-concat')
-const uglify = require('gulp-uglify');
 function js() {
-    return gulp.src('./src/script/**/*.js')
-        .pipe(concat('output.js'))
-        //.pipe(uglify())
-        .pipe(gulp.dest('./dist/js'))
+    return gulp.src('./src/script/index/*.js')
+        .pipe(concat('index.js'))
+        .pipe(gulp.dest('./dist/js')) 
 }
 gulp.task('js', js)
-
-
+function jszhuce() {
+  return gulp.src('./src/script/register/*.js')
+    .pipe(concat('register.js'))
+    .pipe(gulp.dest('./dist/js'))
+}
+function jsdenglu() {
+  return gulp.src('./src/script/login/*.js')
+    .pipe(concat('login.js'))
+    .pipe(gulp.dest('./dist/js'))
+}
 //定义一个任务，用来生成精灵图
 const spritesmith = require('gulp.spritesmith');
 function sprite() {
@@ -114,6 +120,8 @@ function watchTask() {
         copy()
         sass()
         js()
+        jszhuce()
+        jsdenglu()
     })
 
     watch('./dist/**/*.*', function () {

@@ -5,10 +5,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta http-equiv="X-UA-Compatible" content="ie=edge">
   <title>Document</title>
+  <link rel="stylesheet" href="./../css/qys.css">
+  <link rel="stylesheet" href="./../css/login.css">
 </head>
 <body>
-  <header>
-    
-  </header>
+<div class="all">
+  <div class="header">
+    <div class="headbox">
+      <img src="../assets/imgs/logo2.png" onclick="location.href='../index.html'">
+      <ul class="header_ul">
+        <li class="header_li fist">首页</li>
+        <li class="header_li">新品</li>
+        <li class="header_li">女士</li>
+        <li class="header_li">男士</li>
+        <li class="header_li">品牌</li>
+        <li class="header_li">走秀移动端</li>
+      </ul>
+      <div class="header_btn">
+        <button onclick="location.href='./register.html'">&nbsp;&nbsp;注册&nbsp;&nbsp;</button>
+        <button onclick="location.href='./login.html'">&nbsp;&nbsp;登录&nbsp;&nbsp; </button>
+      </div>
+    </div>
+  </div>
+  <div class="autobody">
+    <div class="cont">
+      <h2>账号密码登陆</h2>
+      <div class="uesrname">
+        <input type="text" class="login_name" placeholder="请输入登陆账号（手机/邮箱/用户名）"><span>X</span>
+      </div>
+      <div class="password">
+        <input type="password" class="login_password" placeholder="请输入密码"><span>X</span>
+      </div>
+      <p class="passerror">请输入正确的账号（手机/邮箱/用户名）或密码！</p>
+      <ul class="zhaohui">
+        <li class="zhzh"><a href="./zhaohui.html">找回密码？</a></li>
+        <li class="zhuce"><a href="./register.html">注册账号</a></li>
+      </ul>
+      <button class="login_btn">登陆</button>
+    </div>
+  </div>
+  <div id="footer">
+    <a href="#"><img src="./../assets/imgs/footer1.png" id="img111"></a>
+  </div>
+</div>
 </body>
 </html>
